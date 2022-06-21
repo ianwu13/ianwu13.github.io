@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Scrolling Nav - Start Bootstrap Template</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../static/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header-->
+        <header class="bg-secondary bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">Put Title Here</h1>
+                <p class="lead">Put other stuff here</p>
+                <a class="btn btn-lg btn-light" href="#about">See Project!</a>
+            </div>
+        </header>
+
+        <!-- About section-->
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>About our Project</h2>
+                        <p class="lead">We decided to create a song classification product that would accurately calculate whether a song belonged in a given playlist or not. Using specific attributes of a song, we used machine learning techniques to predict if a song could be included in a playlist.</p>
+                        <ul>
+                            <li>Clickable nav links that smooth scroll to page sections</li>
+                            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+                            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+                            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDA section-->
+        <section id="eda">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h3>Correlation Matrix</h3>
+                            <p class="lead">We use a correlation matrix (below) to visualize what variables from our dataset have strong interactions with each other.</p>
+                            <br>
+                            <iframe width="900" height="900" title="Correlation Matrix" src="../static/Charts/cor_mat.html"></iframe> <br>
+                      <h3>Pairplots</h3>
+                            <p class = "lead"> The visualization is essentially a more in depth correlation matrix, showing the correlation between data via multiple scatter plots. Diagonals are omitted due to the fact that data will always correlate with itself, making it unnecessary noise.</p>
+                            <br>
+                      <iframe width="1000" height="1000" src="../static/Charts/Scatter_Matrix.html"> </iframe> <br>
+                            <h3>Scatterplot Between Loudness, Energy, and Acousticness</h3>
+                              <p class = "lead"> The visualization showcases the relationship between loudness, energy, and acousticness. There is a strong, positive, nonlinear correlation between loudness and energy while there is a negative correlation between acousticness and the other two variables.</p>
+                              <br>
+                      <iframe width="900" height="900" src="../static/Charts/RelationshipBetweenLoudnessEnergyAcousticness.html"> </iframe> <br>
+                            <h3>Scatterplot Between Energy_pl, Time Signature_pl, and Loudness_pl</h3>
+                              <p class = "lead"> The visualization showcases the relationship between Energy_pl, Time Signature_pl, and Loudness_pl. There is a strong positive correlation between all three variables. Generally as energy_pl increases, time signature_pl and loudness_pl does as well. </p>
+                              <br>
+                      <iframe width="900" height="900" src="../static/Charts/RelationshipBetweenEnergyTimeSignatureLoudness.html"> </iframe> <br>
+                            <h3>Scatterplot Between Valence_pl, Danceability_pl, Instrumentalness_pl</h3>
+                              <p class = "lead"> The visualization showcases the relationship between valence_pl, danceability_pl, and instrumentalness_pl. There is a strong positive correlation between danceability_pl and valence_pl while there is a strong negative correlation between instrumentalness_pl with the two other variables. </p>
+                              <br>
+                  <iframe width="900" height="900" src="../static/Charts/RelationshipBetweenValenceDanceability,Intrumentalness.html"> </iframe> <br>
+                     <h3>Song Attributes and Positivity</h3>
+                            <p class="lead">A scatter plot is used to visualize the correlation between <i>loudness, acousticness, and valence (overall positivity).</i> Notice the relationship between the three values. Happier songs tend to be louder, and sadder songs are more acoustic. You can see that as valence increases, our dots become darker, meaning that the songs are not very acoustic. The happiest songs tend to have medium to high volumes. </p>
+                            <br>
+                            <iframe width="900" height="900" title="Effects of Loudness and Acousticness on Overall Positivity" src="../static/Charts/LOUDvsVALvsACOUSTICNESS.html"></iframe> <br>
+                      <h3>Dancebility vs energy</h3>
+                            <p class="lead">We use a correlation matrix (below) to visualize how dancebility, energy and tempo interact with each other. In the graph you can see that when the energy goes up so does the dancebility. You can also see that there is high dancebility when the tempo is between 100 and 150</p>
+                            <br>
+                            <iframe width="900" height="900" title="Correlation Matrix" src="../static/Charts/dance__vs_energy_tempo.html"></iframe> <br>
+                       </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ML section-->
+        <section class="bg-light" id="services">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h1>Machine Learning</h1> <br>
+                        <p>OVERVIEW</p>
+
+                        <h3>Support Vector Machine (SVM)</h3>
+                        <p class="lead">SVM is a supervised machine learning model. It is a classification method which groups data points into different categories using a hyperplane. Because SVMs classify data point based on their location, this machine learning method requires data with clustering to perform well. To train an SVM, we used the SVC module from the SKLearn library. However, we found this to be too slow, and switched to the more optimized LinearSVC module.</p>
+
+                        <h3>Random Forest</h3>
+                        <p class="lead">	Decision trees are tree-like models consisting of branches and leaves. Leaves are conditions that, when met, pass the state to the next branch where the process continues. <br><br>
+
+Random forests consist of a “forest” of decision trees. They operate by first bootstrapping the data, which is basically taking random samples from the data, feeding the bootstrapped data to the decision trees until they finish, tallying up the results, and returning whichever result had the most tallies. Think of a jury system: each tree in the forest produces a “jury,” and then the votes are pooled and the winning product is returned.
+</p>
+
+                        <h3>Neural Nets</h3>
+                        <p class="lead">Neural Networks are a subset of machine learning that uses algorithms to understand underlying relationships of data. In this project, they are being used to understand the relationships between various attributes of a song and a playlist to predict whether said song belongs in a playlist. Within the code, the data is first split into random train and test subsets (80-20). From there, the classifier uses the test data to make predictions. After each run, an accuracy score was produced to assess how well the classifier was able to make predictions. To test and finetune some of the hyperparameters, the GridSearchCV algorithm was used to test multiple possibilities for hidden layers or alpha values and determine which combination worked best with the data. </p>
+                      <!--  <img src="Neural Network Picture.jpeg" alt="A neural network" style="width:700px;height:500px;">  -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion section-->
+        <section id="contact">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Conclusion</h2><br>
+                        <p>In just 2 weeks, we were able to create a product that can (more or less) accurately predict whether or not a song belongs in a given playlist. With our limited team size and plenty of technical drawbacks, we still persevered and achieved an end result that satisfied our interests. Our project can be a stepping stone to greater things, such as true song recommendation or a genre classifier. Through this project we were shown the wider world of what is possible with AI. With our newfound knowledge and experience on data exploration and machine learning, this project is only the beginning of our AI careers.
+                        </p>
+                        <p class="lead"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team section-->
+        <section id="team" class="bg-light">
+                <div class="container px-5", style="margin-bottom: 3rem !important;">
+                  <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-9 col-xl-6">
+                            <div class="text-center">
+                                <h2 class="fw-bolder">Team</h2>
+                                <p class="lead fw-normal text-muted mb-5">Meet the extraordinary Gravity Wells Team</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Student</div>
+                                    <a class="text-decoration-none link-dark stretched-link" ><h5 class="card-title mb-3">Aaron E. Simpson</h5></a>
+                                  <a class="text-decoration-none link-dark stretched-link" >My name is Aaron and I have little experience coding with C# and then Python3. I joined AI in order to get a good idea of machine learning and whether or not I want to pursue, and found out how much of a passion and fascination I have with AI. Hopefully I can find a long fulfilling career in working with AI.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Student</div>
+                                    <a class="text-decoration-none link-dark stretched-link" ><h5 class="card-title mb-3">Patrick Howland</h5></a>
+                                  <a class="text-decoration-none link-dark stretched-link" >I am a rising senior and I have been coding in python for about 6 months. I wanted to do AI camp because it was going to be a nice segway into machine learning as well as learning how to work with a team.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Student</div>
+                                    <a class="text-decoration-none link-dark stretched-link" ><h5 class="card-title mb-3">Shriya Dave</h5>I am a graduated senior and I have been coding for 2-3 years, starting with Java. I joined AI Camp to learn more about Data Science specifically and gain more experience before college.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Student</div>
+                                    <a class="text-decoration-none link-dark stretched-link" ><h5 class="card-title mb-3">Casen Shoemake</h5>I've been coding in Python for about a year now as a rising senior and I joined AI Camp to expand my knowledge on machine learning and data science. I hope to major in Computer Science and get a job in software development or artificial intelligence.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Student</div>
+                                    <a class="text-decoration-none link-dark stretched-link" ><h5 class="card-title mb-3">Sanjana Divakarla</h5></a>
+                                  <a class="text-decoration-none link-dark stretched-link" >I have done AP computer science A and learned some front end last year. I joined this AI camp to extend my knowledge on machine learning and data science. </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Intern</div>
+                                    <a class="text-decoration-none link-dark stretched-link" ><h5 class="card-title mb-3">Ian Wu</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Gravity Wells 2022</p></div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
