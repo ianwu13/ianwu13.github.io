@@ -3,6 +3,11 @@
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@font-face {
+  font-family: 'hurley_sans'; /*a name to be used later*/
+  src: 'assets/hurley-1967-sans.otf'; /*URL to font*/
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
