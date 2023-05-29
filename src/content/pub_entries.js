@@ -20,6 +20,15 @@ const publications = [
     code: "https://github.com/",
   },
   {
+    year: 2023,
+    title: "Paper title bibendum enim facilisis gravida neque convallis a cras.",
+    author_span: <span>Author, <b>John Doe</b>, Author, Author and Author</span>,
+    location: "57th Annual Conference on the Earth",
+    pdf: "paper1.pdf",
+    doi: "https://www.doi.org/",
+    code: "https://github.com/",
+  },
+  {
     year: 2022,
     title: "Paper title velit ut tortor pretium viverra suspendisse potenti nullam.",
     author_span: <span><b>John Doe</b>, Author, Author, Author, and Author</span>,
