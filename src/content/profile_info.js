@@ -1,11 +1,11 @@
-import johndoe_headshot from '../media/johndoe_headshot.png';
+// Imports here
 
 // any css-accepted format
 export const accent_color = "#990000";
 
 export const name = "Ian Wu";
 
-export const profile_pic = johndoe_headshot;
+export const profile_pic =  process.env.PUBLIC_URL + '/media/johndoe_headshot.png';
 
 export const introduction = <div>
   <p>CURRENTLY A WIP, COME BACK SOON FOR AN UPDATE</p>

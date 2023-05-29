@@ -1,4 +1,6 @@
-import newsitem_pic from '../media/newsitem_pic.jpg';
+// Imports here
+
+export const newsitem_pic =  process.env.PUBLIC_URL + '/media/newsitem_pic.jpg';
 
 export const news_items = [
   {
