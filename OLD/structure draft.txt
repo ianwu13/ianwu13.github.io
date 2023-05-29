@@ -1,0 +1,22 @@
+root
+    build_site.sh
+        THIS WILL RUN NPM RUN BUILD, THEN COPY BUILD FILES TO MAIN DIR
+    clean_build_files.sh
+        THIS WILL REMOVE FILES FROM BUILD TO MAKE A CLEAN DIR FOR EDITTING 
+    
+    build - GITIGNORED?
+    public
+        AMANI STUFF
+    src
+        AMANI STUFF
+    node_modules - GITIGNORED
+    LICENSE
+    package.json
+    yarn.lock
+    .gitignore
+    README.md 
+
+
+
+TODO:
+    Need to restructure public to put assets and stuff in folders

@@ -1,0 +1,131 @@
+html, body {
+  margin: 0;
+  font-family: "Computer Modern Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overscroll-behavior-y: none;
+  font-size: 16px;
+}
+
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  flex-grow: 1;
+}
+
+.copyright {
+  position: relative;
+  margin: 0;
+  left: 20px;
+  bottom: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+  flex: 0;
+  font-size: 12px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .copyright {
+    left: 3.33%;
+  }
+}
+
+#website-div {
+  margin: 0;
+  padding: 40px 0px;
+  position: relative;
+  width: 75%;
+  max-width: 1080px;
+  left: 50vw;
+  transform: translate(-50%,0);
+  display: flex;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+:not(#menu-div) > a {
+  color: var(--accent);
+  opacity: 100%;
+  transition: opacity 200ms linear;
+}
+
+:not(#menu-div) > a:hover {
+  opacity: 50%;
+  transition: opacity 200ms linear;
+}
+
+.subtitle {
+  font-size: 0.8em;
+  margin-top: -1em;
+  margin-bottom: 1.5em;
+}
+
+ @media only screen and (max-width: 1200px) {
+  #website-div {
+    flex-direction: column;
+  }
+  .section-head {
+    font-size: 1.3em;
+  }
+  h2 {
+    font-size: 1.1em;
+   }
+   .subtitle {
+    font-size: 0.7em !important;
+   }
+ }
+
+ @media only screen and (max-width: 1020px) {
+  :not(.news-item-text) > p {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .section-head {
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  :not(.news-item-text) > p {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  :not(.news-item-text) > p {
+    font-size: 0.7em;
+  }
+
+}
