@@ -16,10 +16,6 @@ export const introduction = <div>
 // icons from fontawesome 6.1.1 (free), or academicons (https://jpswalsh.github.io/academicons/)
 export const icons = [
   {
-    className: "ai ai-cv",
-    link: process.env.PUBLIC_URL + '/temp_cv.pdf'
-  },
-  {
     className: "ai ai-semantic-scholar",
     link: "https://www.semanticscholar.org/"
   },
@@ -28,12 +24,20 @@ export const icons = [
     link: "https://scholar.google.com/"
   },
   {
+    className: "fa-brands fa-github",
+    link: "https://github.com/"
+  },
+  {
     className: "fab fa-linkedin-in",
     link: "https://www.linkedin.com/"
   },
   {
     className: "fa-brands fa-twitter",
     link: "https://twitter.com/"
+  },
+  {
+    className: "ai ai-cv",
+    link: process.env.PUBLIC_URL + '/temp_cv.pdf'
   },
   {
     className: "fas fa-paper-plane",
