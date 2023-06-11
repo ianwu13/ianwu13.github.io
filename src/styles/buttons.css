@@ -1,0 +1,308 @@
+/*
+BUTTONS FOR USE IN MENUS
+
+REGISTRY: [28, 59, 56, 62, 86, 89]
+FORMAT: <button class="button-xx" role="button">Button xx</button>
+
+From: https://getcssscan.com/css-buttons-examples
+*/
+
+/*<button class="button-28" role="button">Button 28</button>*/
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 48px;
+  min-width: 0;
+  outline: none;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  transition-duration: 750ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/*<button class="button-59" role="button">Button 59</button>*/
+
+/* CSS */
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+
+/*<button class="button-56" role="button">Button 56</button>*/
+
+/* CSS */
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+
+/*<button class="button-62" role="button">Button 62</button>*/
+
+/* CSS */
+.button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+/*<button class="button-86" role="button">Button 86</button>*/
+
+/* CSS */
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+/*<button class="button-89" role="button">Button 89</button>*/
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
