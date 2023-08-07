@@ -1,6 +1,11 @@
 # ianwu13.github.io
 Github I/O Site
 
+# TODO
+- Hamburger Menu for Mobile
+- Filter Portfolio Items
+  - Filterbar Component W Animation
+
 # academic-website
 A template for a minimalist academic website. Preview it [here](https://academic-website-amanirmk.vercel.app)!
 
