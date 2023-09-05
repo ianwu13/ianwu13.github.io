@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.18abbb7c.css",
-    "main.js": "/static/js/main.0a3bb29b.js",
+    "main.css": "/static/css/main.dd9200fc.css",
+    "main.js": "/static/js/main.ca944631.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/RoadRage-Regular.ttf": "/static/media/RoadRage-Regular.d3abfb21ed04b38e3f61.ttf",
     "static/media/Inconsolata-VariableFont_wdth,wght.ttf": "/static/media/Inconsolata-VariableFont_wdth,wght.1f56ee050cf1f63c7314.ttf",
     "static/media/Chivo-Italic-VariableFont_wght.ttf": "/static/media/Chivo-Italic-VariableFont_wght.b08b2bba23b9a72c232d.ttf",
     "static/media/Chivo-VariableFont_wght.ttf": "/static/media/Chivo-VariableFont_wght.9d619c1c485f7d283613.ttf",
     "index.html": "/index.html",
-    "main.18abbb7c.css.map": "/static/css/main.18abbb7c.css.map",
-    "main.0a3bb29b.js.map": "/static/js/main.0a3bb29b.js.map",
+    "main.dd9200fc.css.map": "/static/css/main.dd9200fc.css.map",
+    "main.ca944631.js.map": "/static/js/main.ca944631.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18abbb7c.css",
-    "static/js/main.0a3bb29b.js"
+    "static/css/main.dd9200fc.css",
+    "static/js/main.ca944631.js"
   ]
 }
