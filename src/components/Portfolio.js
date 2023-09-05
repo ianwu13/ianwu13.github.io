@@ -2,8 +2,8 @@ import React from 'react';
 import { FadeIn } from 'react-slide-fade-in';
 import "../styles/home.css";
 import "../styles/portfolio.css";
-import { FilterBar } from "./Filterbar.js"
-import { portfolio_intro, portfolio_items, tagSet } from '../content/portfolio_items.js';
+
+import { portfolio_intro, portfolio_items } from '../content/portfolio_items.js';
 
 const tags_li = (tag) => {
   return <li key={tag}>{tag}</li>;
@@ -18,12 +18,27 @@ const linksMaker = (links) => {
   }
 }
 
-const PortfolioItem = ({img_pth, title, description, links, tags}) => {
+/*const PortfolioItem = ({img_pth, title, description, links, tags}) => {
   return (
     <div className="portfolio">
       <div>
-        <p className="pf-img-container"><img className="pf-item-img" src={img_pth} alt="Portfolio Item Image"/></p>
+        <p className="pf-img-container"><img className="pf-item-img" src={img_pth} alt="Portfolio Item Thumbnail"/></p>
       </div>
+      <div>
+        <p className="title">{title}</p>
+        <p className="description">{description}</p>
+        <span className="pf-links">
+          {Object.entries(links).map(linksMaker)}
+        </span>
+        <ol className="tags">{tags.map(tags_li)}</ol>
+      </div>
+    </div>
+  );
+}*/
+
+const PortfolioItemNoImg = ({title, description, links, tags}) => {
+  return (
+    <div className="portfolio">
       <div>
         <p className="title">{title}</p>
         <p className="description">{description}</p>
@@ -38,9 +53,10 @@ const PortfolioItem = ({img_pth, title, description, links, tags}) => {
 
 const makePortfolioItem = (port) => {
   return (
-    <PortfolioItem
+    //<PortfolioItem
+    <PortfolioItemNoImg
       key={port.title}
-      img_pth={port.img_pth}
+      //img_pth={port.img_pth}
       title={port.title}
       description={port.description} 
       links={port.links}
@@ -65,10 +81,6 @@ const Portfolio = () => {
         <div className='pfolio_intro'>
           {portfolio_intro}
         </div>
-        <FilterBar
-          filter_section_id={"portfolio-items-div"}
-          tagset={tagSet}
-        />
         <hr/>
         <div id="portfolio-items-div">
           {portfolio_items.map(makePortfolioItem)}

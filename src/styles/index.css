@@ -1,10 +1,11 @@
-html, body {
+html,
+body {
   margin: 0;
-  font-family: "Computer Modern Sans", sans-serif;
+  font-family: "Chivo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
   scrollbar-width: none;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,8 @@ html, body {
   font-size: 16px;
 }
 
-body::-webkit-scrollbar, html::-webkit-scrollbar {
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
   display: none;
 }
 
@@ -26,23 +28,6 @@ code {
   flex-grow: 1;
 }
 
-.copyright {
-  position: relative;
-  margin: 0;
-  left: 20px;
-  bottom: 20px;
-  margin-top: 20px;
-  padding-top: 20px;
-  flex: 0;
-  font-size: 12px !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .copyright {
-    left: 3.33%;
-  }
-}
-
 #website-div {
   margin: 0;
   padding: 40px 0px;
@@ -50,7 +35,7 @@ code {
   width: 80%;
   max-width: 1080px;
   left: 50vw;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   display: flex;
 }
 
@@ -69,13 +54,13 @@ a {
   text-decoration: none;
 }
 
-:not(#menu-div) > a {
+:not(#menu-div)>a {
   color: var(--accent);
   opacity: 100%;
   transition: opacity 200ms linear;
 }
 
-:not(#menu-div) > a:hover {
+:not(#menu-div)>a:hover {
   opacity: 50%;
   transition: opacity 200ms linear;
 }
@@ -86,23 +71,26 @@ a {
   margin-bottom: 1.5em;
 }
 
- @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   #website-div {
     flex-direction: column;
   }
+
   .section-head {
     font-size: 1.3em;
   }
+
   h2 {
     font-size: 1.1em;
-   }
-   .subtitle {
-    font-size: 0.7em !important;
-   }
- }
+  }
 
- @media only screen and (max-width: 1020px) {
-  :not(.news-item-text) > p {
+  .subtitle {
+    font-size: 0.7em !important;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  :not(.news-item-text)>p {
     font-size: 0.85em;
   }
 }
@@ -112,20 +100,20 @@ a {
     font-size: 1.1em;
     text-align: center;
   }
+
   .subtitle {
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 540px) {
-  :not(.news-item-text) > p {
+  :not(.news-item-text)>p {
     font-size: 0.8em;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  :not(.news-item-text) > p {
+  :not(.news-item-text)>p {
     font-size: 0.7em;
   }
-
 }

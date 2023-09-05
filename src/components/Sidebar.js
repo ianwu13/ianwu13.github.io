@@ -11,12 +11,8 @@ const toPagename = (page) => {
       return "Research";
     case "portfolio":
       return "Portfolio";
-    case "research":
-      return "Research";
     case "cv_resume":
       return "CV/Resume";
-    case "news":
-      return "News";
     default:
       return "Whoops!";
   };
@@ -27,12 +23,13 @@ const Sidebar = () => {
   document.title = (page ? toPagename(page) + " — " : "") + name;
   return (
     <div id="menu-div">
-        <h1>{name}</h1>
-        <Link to="/" className={page === undefined ? "active-page" : ""}>about</Link>
-        <Link to="/portfolio" className={page === "portfolio" ? "active-page" : ""}>portfolio</Link>
-        <Link to="/research" className={page === "research" ? "active-page" : ""}>research</Link>
+        <a href="/" className="header">
+          <h1>{name}</h1>
+        </a>
+        <Link to="/about" className={page === undefined ? "active-page" : ""}>about</Link>
         <Link to="/cv_resume" className={page === "cv_resume" ? "active-page" : ""}>cv/resume</Link>
-        <Link to="/news" className={page === "news" ? "active-page" : ""}>news</Link>
+        <Link to="/portfolio" className={page === "portfolio" ? "active-page" : ""}>portfolio</Link>
+        <Link to="/research" className={page === "research" ? "active-page" : ""} style={{display: 'None'}}>research</Link>
     </div>
   );
 }

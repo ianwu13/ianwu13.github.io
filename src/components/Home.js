@@ -1,7 +1,34 @@
 import React from 'react';
 import { FadeIn } from 'react-slide-fade-in';
+
 import "../styles/home.css";
+import "../styles/news.css";
+
 import { name, profile_pic, introduction, icons } from '../content/profile_info.js';
+import { news_items } from '../content/news_items.js';
+
+const makeNewsItem = (item) => {
+  var date = "";
+  if ("day" in item) {
+    let ordinal = "";
+    if (item.day > 3 && item.day < 21) { ordinal = 'th';
+    } else if (item.day % 10 === 1) { ordinal = "st";
+    } else if (item.day % 10 === 2) { ordinal = "nd";
+    } else if (item.day % 10 === 3) { ordinal = "rd";
+    } else { ordinal = "th"; }
+
+    date = `${item.month} ${item.day}${ordinal}, ${item.year}`;
+  } else if("month" in item) {
+    date = `${item.month} ${item.year}`;
+  } else {
+    date = `${item.year}`;
+  }
+  return (
+    <li>
+      <strong>{date} - </strong>{item.description}
+    </li>
+  );
+}
 
 const makeIcon = (icon) => {
   return (
@@ -21,7 +48,7 @@ const Home = () => {
       </FadeIn>
       <FadeIn
       from="bottom"
-      positionOffset={50}
+      positionOffset={32}
       durationInMilliseconds={500}
       >
       <div id="intro-div">
@@ -33,6 +60,17 @@ const Home = () => {
         </div>
         <img id="profile-pic" alt={name} src={profile_pic}/>
       </div>
+      </FadeIn>
+      <FadeIn
+      from="left"
+      positionOffset={50}
+      durationInMilliseconds={500}
+      >
+      <h1 className="section-head">News</h1>
+      <hr/>
+      <ul id="news-list">
+        {news_items.map(makeNewsItem)}
+      </ul>
       </FadeIn>
       </div>
   );

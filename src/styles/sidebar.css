@@ -3,6 +3,7 @@
 }
 
 #menu-div a {
+  font-weight: 500;
   display: block;
   text-decoration: none;
   color: dimgrey;
@@ -15,6 +16,11 @@
 #menu-div a:hover {
   color: black;
   transition: color 200ms linear;
+}
+
+.header {
+  all: unset !important;
+  cursor: pointer !important;
 }
 
 .active-page {

@@ -3,20 +3,23 @@ Github I/O Site
 
 # TODO
 - Hamburger Menu for Mobile
+  - https://www.youtube.com/watch?v=23BHwAFIZmk
 - Filter Portfolio Items
   - Filterbar Component W Animation
 
-# academic-website
+# Template Info
+
+## academic-website
 A template for a minimalist academic website. Preview it [here](https://academic-website-amanirmk.vercel.app)!
 
-## Can I use this?
+### Can I use this?
 Yes! This is available for anyone to use for completely free! I only have one request: I have added a link to the bottom of the website as a way for others to find this template &mdash; **please do not remove this**. Of course I cannot enforce this, so if you feel you must remove it, I only ask that you give credit in some other way.
 
-## Disclaimer
+### Disclaimer
 
 This is a template based on an academic website I created at the beginning of my PhD. It was not originally meant for others to use, and so it is not robust and may break with even small changes. Accordingly, I can only recommend using this template if you have some familiarity with React and are open to diving into someone else's code if necessary. That said, I have done my best to make it easy to use the site as is (almost all content on the website can be changed through the one folder `/src/content/`). Below is some guidance on replacing the filler content with your own.
 
-## About page
+### About page
 
 You can change content on the about page through the file `/src/content/profile_info.js`. 
 
@@ -27,7 +30,7 @@ In this file you can change your
 - `introduction`: Describe yourself! Input as a `<div>` of `<p>`s.
 - `icons`: These are links to your CV, Google Scholar, etc. Input as a list of objects containing the `className` for the fontawesome or academicon icon desired, and the `link`. **Note:** Your CV should be placed in `/public/` and linked as `process.env.PUBLIC_URL + '/cv_filename.pdf'`.
 
-## Research page
+### Research page
 
 You can change content on the research page through the file `/src/content/pub_entries.js`.
 
@@ -53,7 +56,7 @@ export const pub_entries = [
 ];
 ```
 
-## News page
+### News page
 
 You can change content on the news page through the file `/src/content/news_items.js`.
 
@@ -67,7 +70,7 @@ In this file, you define a list of news items, which each look like this:
 ```
 All fields should be given. Again, pictures should be placed in `/src/media/` and imported at the top of this file. **Note:** Text is given as a `<p>` so that links or other HTML elements can be added.
 
-## Final customizations
+### Final customizations
 
 Before your site is ready, there are two final changes.
 

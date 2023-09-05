@@ -9,6 +9,8 @@
 }
 
 .year {
+  /*font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;*/
   width: 4em;
 }
 
@@ -37,6 +39,11 @@
 .links a {
   font-size: 0.65em;
   color: var(--accent) !important;
+}
+
+.publication>div>.title {
+  font-weight: 575;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 1200px) {

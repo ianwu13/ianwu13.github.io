@@ -41,7 +41,7 @@ const makePub = (pub) => {
 const makePubSection = (pub_section) => {
   return (
     <div key={pub_section[0]}>
-      <h2>{pub_section[0]}</h2>
+      <h2>{pub_section[0]}<hr /></h2>
       {pub_section[1].map(makePub)}
     </div>
   );
@@ -54,7 +54,7 @@ const Research = () => {
       durationInMilliseconds={500}
       >
         <h1 className="section-head">Research</h1>
-        <p className="subtitle"><sup>&dagger;</sup>denotes equal authorship.</p>
+        <p className="subtitle"><sup>&dagger;</sup><u>denotes equal authorship.</u></p>
       </FadeIn>
       <FadeIn
       from="bottom"

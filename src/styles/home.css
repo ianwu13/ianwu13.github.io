@@ -7,14 +7,16 @@
   display: flex !important;
   justify-content: space-between !important;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 #profile-pic {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   margin-left: 50px;
+  margin-bottom: 48px;
   border: 1px solid var(--accent);
   box-shadow: 0px 0px 5px lightgrey;
 }
@@ -55,7 +57,7 @@
   }
  }
 
- @media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1020px) {
   #profile-pic {
     width: 250px;
     height: 250px;
@@ -68,7 +70,7 @@
   }
  }
 
- @media only screen and (max-width: 780px) {
+@media only screen and (max-width: 780px) {
   #intro-div {
     flex-direction: column-reverse;
     align-items: start;
@@ -82,7 +84,7 @@
   }
  }
 
- @media only screen and (max-width: 610px) {
+@media only screen and (max-width: 610px) {
   #intro-div {
     align-items: center;
   }
@@ -99,7 +101,7 @@
   }
  }
 
- @media only screen and (max-width: 300px) {
+@media only screen and (max-width: 300px) {
   #text-and-icons {
     width: 250px;
   }

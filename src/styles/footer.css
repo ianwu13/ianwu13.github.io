@@ -1,0 +1,88 @@
+.footer {
+    border-top: 2px solid #eaeaea;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.copyright {
+    position: relative;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex: 0;
+    font-size: 12px !important;
+  }
+
+.r-rage-footer {
+    opacity: 50%;
+    font-family: Roadrage;
+    font-size: 20px;
+    padding-left: 4px;
+  }
+
+.copyright a {
+  text-decoration: underline;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+    align-items: flex-end; /* Align menu to the bottom */
+}
+
+.menu-button {
+    all: unset;
+    cursor: pointer;
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.dropdown-menu {
+    position: absolute;
+    bottom: 100%; /* Display above the button */
+    left: 0;
+    width: 128px;
+    max-height: 164px;
+    overflow-y: scroll;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item:hover {
+    background-color: #ddd;
+}
+
+.menu-button:hover {
+    color: black;
+}
+
+.menu-button:focus ~ .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu:hover {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .copyright {
+        left: 3.33%;
+    }
+}

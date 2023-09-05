@@ -30,7 +30,7 @@ const News = () => {
       <FadeIn
       durationInMilliseconds={500}
       >
-        <h1 className="section-head">News</h1>
+        <h1 className="section-head">News - TODO, MAYBE PUT ON PROFILE PAGE</h1>
       </FadeIn>
       <FadeIn
       from="bottom"
