@@ -9,7 +9,6 @@ global.email = "ianwu@usc.edu";
 
 export const profile_pic =  process.env.PUBLIC_URL + '/media/iw_headshot.png';
 
-// TODO
 export const introduction = 
 <div>
     <p>
@@ -23,7 +22,7 @@ export const introduction =
         I earned my Bachelor's degree in computer science from <a href="https://www.csuohio.edu/">Cleveland State
         University</a>. During my undergraduate years, I successfully balanced the demands of being an NCAA Division
         1 athlete in fencing while excelling academically in the Jack, Joseph, and Morton Mandel Honors College. Originating
-        from Oklahoma, I'm deeply passionate about outdoor activities and environmental conservation.
+        from Oklahoma, I'm deeply passionate about outdoor activities and the environment.
     </p>
 
     <p>

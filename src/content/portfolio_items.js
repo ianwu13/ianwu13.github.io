@@ -1,7 +1,7 @@
 // Imports here
 
 export const portfolio_intro = <div>
-<p>A non-exhaustive and non-chronologically ordered list of a few of my favorite projects I've done. If you're interested in my experience in a particular area or with a specific technology feel free to reach out through <a href={"mailto:"+global.email}>email</a> or checkout <a href="https://github.com/ianwu13">my github</a>!</p>
+<p>A non-exhaustive and non-chronologically ordered list of some of projects I've done which may be relevant to roles I'm interested in. If you're interested in my experience in a particular area or with a specific technology feel free to reach out through <a href={"mailto:"+global.email}>email</a> or checkout <a href="https://github.com/ianwu13">my github</a>!</p>
 <p>I'm currently in the process of creating READMEs for any of the projects listed here that don't have them yet, so please forgive any repositories without good documentation.</p>
 </div>;
 // <p>MAYBE ADD TAGS DROPDOWN OR SOMETHING TO LINKS SECTION?</p>
@@ -27,6 +27,15 @@ export const portfolio_items = [
       paper: process.env.PUBLIC_URL + "wsi_classifier.pdf"
     },
     tags: ["computervision", "deeplearning"],
+  },
+  {
+    img_pth: process.env.PUBLIC_URL + "/media/portfolio_imgs/portfolio_img.png",
+    title: "Restaurant Recommender System",
+    description: "Developed a recommendation model using the Yelp Dataset. This model was a hybrid model using feature combination. In this model, predictions from several sub-models, as well as user and resturaunt features, are used as inputs to an XGBoost model which predicts a given user's rating for a given restaurant. For the sub-models, I trained SVD, Co-clustering, KNN, and item-based collaborative filtering models using Apache Spark. I also implemented the item-based collaborative filtering model from scratch in PySpark.",
+    links: {
+      code: "https://github.com/ianwu13/Restaurant-Recommender",
+    },
+    tags: ["recomendersystems", "machinelearning"],
   },
   {
     img_pth: process.env.PUBLIC_URL + "/media/portfolio_imgs/portfolio_img.png",
