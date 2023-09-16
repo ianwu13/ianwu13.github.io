@@ -8,11 +8,13 @@ import { pdfjs, Document, Page } from 'react-pdf';
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 
-
+pdfjs.GlobalWorkerOptions.workerSrc = process.env.PUBLIC_URL + '/pdf.worker.min.js';
+/* // Developement version
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
   import.meta.url,
 ).toString();
+*/
 
 
 const PDFRender = ({ div_id, width_px }) => {
