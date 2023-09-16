@@ -10,4 +10,7 @@ export const cv_intro = ""
 
 // icons from fontawesome 6.1.1 (free), or academicons (https://jpswalsh.github.io/academicons/)
 export const cv_icon = "fa-solid fa-file-arrow-down"
+
 export const cv_pth =  process.env.PUBLIC_URL + '/Ian_Wu_Curriculum_Vitae.pdf';
+// I've been cropping the pdf @ cv_pth using this tool: https://xodo.com/crop-pdf
+export const cropped_cv_pth =  process.env.PUBLIC_URL + '/Ian_Wu_Curriculum_Vitae-cropped.pdf';
