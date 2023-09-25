@@ -14,7 +14,7 @@ const linksMaker = (links) => {
     return <a href={links[1]}>[{links[0]}]&emsp;</a>;
   } 
   else {
-    return <a href={process.env.PUBLIC_URL + '/portfolio/' + links[1]}>[{links[0]}]&emsp;</a>;
+    return <a href={links[1]}>[{links[0]}]&emsp;</a>;
   }
 }
 
