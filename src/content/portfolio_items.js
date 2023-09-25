@@ -2,8 +2,8 @@
 
 export const portfolio_intro = <div>
 <p>A non-exhaustive and non-chronologically ordered list of some of projects I've done which may be relevant to roles I'm interested in. If you're interested in my experience in a particular area or with a specific technology feel free to reach out through <a href={"mailto:"+global.email}>email</a> or checkout <a href="https://github.com/ianwu13">my github</a>!</p>
-<p>I'm currently in the process of creating READMEs for any of the projects listed here that don't have them yet, so please forgive any repositories without good documentation.</p>
 </div>;
+// <p>I'm currently in the process of creating READMEs for any of the projects listed here that don't have them yet, so please forgive any repositories without good documentation.</p>
 // <p>MAYBE ADD TAGS DROPDOWN OR SOMETHING TO LINKS SECTION?</p>
 
 // export const portfolioitem_pic =  process.env.PUBLIC_URL + '/media/newsitem_pic.png';
