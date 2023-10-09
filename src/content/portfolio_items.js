@@ -11,7 +11,7 @@ export const portfolio_items = [
   {
     img_pth: process.env.PUBLIC_URL + "/media/portfolio_imgs/portfolio_img.png",
     title: "LLM Augmentation for Multi-Issue Negotiation",
-    description: <span>We are researching methods to create end-to-end, multi-issue negotiator agents by utilizing reinforcement learning and models such as GRUs/LSTMs in tandem with LLMs. <br/>NOTE: This project is currently a work in progress, so agent code is not yet public.</span>,
+    description: <span>We are researching methods to create end-to-end, multi-issue negotiator agents by utilizing reinforcement learning and models such as GRUs/LSTMs in tandem with LLMs. <br/>NOTE: This project is currently a work in progress, so agent code is not yet public but is available upon request.</span>,
     links: {
       "Agent code": "https://github.com/ianwu13", // /llm_nego_plan_exps/
       "RL code": "https://github.com/ianwu13/end-to-end-negotiator/tree/cocoa_imp",

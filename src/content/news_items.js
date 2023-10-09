@@ -2,6 +2,11 @@
 
 export const news_items = [
   {
+    month: "Oct.",
+    year: 2023,
+    description: <span>Our paper <i><a href="/">"Be Selfish, But Wisely: Investigating the Impact of Agent Personality in Mixed-Motive Human-Agent Interactions"</a></i> was accepted to EMNLP 2023!</span>
+  },
+  {
     month: "May",
     year: 2023,
     description: <span>Succesfully finished my first year as a student at USC and joined the <a href="https://ict.usc.edu/">Institute for Creative Technologies</a> as a Summer Research Intern</span>
