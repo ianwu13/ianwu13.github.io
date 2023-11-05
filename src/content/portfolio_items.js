@@ -29,6 +29,15 @@ export const portfolio_items = [
     tags: ["computervision", "deeplearning"],
   },
   {
+    img_pth: process.env.PUBLIC_URL + "/media/portfolio_imgs/pill.png",
+    title: "Corporate Climate Scorecard",
+    description: 'Created a tool to automatically generate a "Climate Scorecard" for companies as part of the SF AI Hackathon - Hosted by MongoDB. To generate the scorecards we extract Wikipedia data with LlamaIndex and perform chunking/segmentation to store the data in MongoDB vectorstore. Finally, we perform recursive retrieval with LlamaIndex summarize the relevant chunks to Llama2 from Together AI.',
+    links: {
+      code: "https://github.com/ianwu13/company-climate-rag-llamaindex",
+    },
+    tags: ["nlp", "largelanguagemodels"],
+  },
+  {
     img_pth: process.env.PUBLIC_URL + "/media/portfolio_imgs/portfolio_img.png",
     title: "Restaurant Recommender System",
     description: "Developed a recommendation model using the Yelp Dataset. This model was a hybrid model using feature combination. In this model, predictions from several sub-models, as well as user and resturaunt features, are used as inputs to an XGBoost model which predicts a given user's rating for a given restaurant. For the sub-models, I trained SVD, Co-clustering, KNN, and item-based collaborative filtering models using Apache Spark. I also implemented the item-based collaborative filtering model from scratch in PySpark.",
